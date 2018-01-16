@@ -1,4 +1,4 @@
-package wang.angi.sample.mybatis.generator.maven;
+package wang.angi.sample.mybatis.generator.eclipse.plugin;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
