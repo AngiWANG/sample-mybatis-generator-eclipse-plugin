@@ -1,4 +1,4 @@
-package wang.angi.sample.mybatis.generator.maven.model;
+package wang.angi.sample.mybatis.generator.eclipse.plugin.model;
 
 /**
  *
@@ -123,5 +123,11 @@ public class City {
 	 */
 	public void setCreatedBy(String createdBy) {
 		this.createdBy = createdBy;
+	}
+
+	@Override
+	public String toString() {
+		return "City [id=" + id + ", name=" + name + ", state=" + state + ", country=" + country + ", createdBy="
+				+ createdBy + "]";
 	}
 }

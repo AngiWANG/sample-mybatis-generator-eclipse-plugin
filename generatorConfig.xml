@@ -18,16 +18,16 @@
 			password="mysql">
 		</jdbcConnection>
 
-		<javaModelGenerator targetPackage="wang.angi.sample.mybatis.generator.maven.model"
+		<javaModelGenerator targetPackage="wang.angi.sample.mybatis.generator.eclipse.plugin.model"
 			targetProject="sample-mybatis-generator-eclipse-plugin/src/main/java">
 		</javaModelGenerator>
 
-		<sqlMapGenerator targetPackage="wang.angi.sample.mybatis.generator.maven.mapper"
+		<sqlMapGenerator targetPackage="wang.angi.sample.mybatis.generator.eclipse.plugin.mapper"
 			targetProject="sample-mybatis-generator-eclipse-plugin/src/main/resources">
 		</sqlMapGenerator>
 
 		<javaClientGenerator type="XMLMAPPER"
-			targetPackage="wang.angi.sample.mybatis.generator.maven.mapper"
+			targetPackage="wang.angi.sample.mybatis.generator.eclipse.plugin.mapper"
 			targetProject="sample-mybatis-generator-eclipse-plugin/src/main/java">
 		</javaClientGenerator>
 

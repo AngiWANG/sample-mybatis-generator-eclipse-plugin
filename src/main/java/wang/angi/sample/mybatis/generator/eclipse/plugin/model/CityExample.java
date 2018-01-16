@@ -1,4 +1,4 @@
-package wang.angi.sample.mybatis.generator.maven.model;
+package wang.angi.sample.mybatis.generator.eclipse.plugin.model;
 
 import java.util.ArrayList;
 import java.util.List;

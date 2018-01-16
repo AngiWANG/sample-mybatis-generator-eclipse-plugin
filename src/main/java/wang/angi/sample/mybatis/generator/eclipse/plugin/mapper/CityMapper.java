@@ -1,9 +1,10 @@
-package wang.angi.sample.mybatis.generator.maven.mapper;
+package wang.angi.sample.mybatis.generator.eclipse.plugin.mapper;
 
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
-import wang.angi.sample.mybatis.generator.maven.model.City;
-import wang.angi.sample.mybatis.generator.maven.model.CityExample;
+
+import wang.angi.sample.mybatis.generator.eclipse.plugin.model.City;
+import wang.angi.sample.mybatis.generator.eclipse.plugin.model.CityExample;
 
 public interface CityMapper {
 
