@@ -2,6 +2,8 @@ package wang.angi.sample.mybatis.generator.eclipse.plugin;
 
 import org.apache.ibatis.session.SqlSession;
 
+import com.github.pagehelper.PageHelper;
+
 import wang.angi.sample.mybatis.generator.eclipse.plugin.mapper.CityMapper;
 import wang.angi.sample.mybatis.generator.eclipse.plugin.model.City;
 import wang.angi.sample.mybatis.generator.eclipse.plugin.model.CityExample;
@@ -41,6 +43,8 @@ public class MyBatisExample {
 			cityMapper.selectByExample(cityExample);
 
 			System.out.println(cityMapper.selectByPrimaryKey(1));
+			PageHelper.startPage(2, 3);
+			System.out.println(cityMapper.selectByExample(new CityExample()).size());
 
 			sqlSession.commit();
 		} catch (Throwable e) {
