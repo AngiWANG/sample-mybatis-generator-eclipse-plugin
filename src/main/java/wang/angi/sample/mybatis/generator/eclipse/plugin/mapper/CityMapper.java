@@ -73,11 +73,4 @@ public interface CityMapper {
 	 * @mbg.generated
 	 */
 	int updateByPrimaryKey(City record);
-
-	/**
-	 * 测试
-	 * @param a
-	 * @return
-	 */
-	int test(int a);
 }
