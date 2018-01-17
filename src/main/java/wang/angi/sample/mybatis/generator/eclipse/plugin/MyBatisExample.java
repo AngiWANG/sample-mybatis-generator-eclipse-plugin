@@ -19,7 +19,7 @@ public class MyBatisExample {
 			city.setName("WuHan");
 			city.setState("HuBei");
 			city.setCountry("China");
-			city.setCreatedBy("水晶");
+			city.setCreatedBy("Angi");
 			cityMapper.insert(city);
 			
 			City city2 = new City();
@@ -29,7 +29,7 @@ public class MyBatisExample {
 
 			City city1 = new City();
 			city1.setName("EZhou");
-			city1.setCreatedBy("Angi");
+			city1.setCreatedBy("水晶");
 			cityMapper.insertSelective(city1);
 			
 			City city3 = new City();
@@ -38,7 +38,7 @@ public class MyBatisExample {
 			cityMapper.updateByPrimaryKeySelective(city3);
 
 			CityExample cityExample = new CityExample();
-			cityExample.or().andNameLike("Wu");
+			cityExample.or().andNameLike("Wu%");
 			cityExample.or().andCreatedByEqualTo("水晶");
 			cityMapper.selectByExample(cityExample);
 
